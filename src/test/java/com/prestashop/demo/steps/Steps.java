@@ -83,7 +83,7 @@ public class Steps implements Assertions<Steps> {
         return this;
     }
 
-    @Step("Проверяем количество товара в корзине на совпадаение с положенным туда ранее")
+    @Step("Проверяем количество товара в корзине на совпадение с положенным туда ранее")
     public Steps checkQuantity(int productPosition,int expectedQuantity) {
         cartPage.getQuantity(productPosition, (quantity) ->
                 assertEquals(expectedQuantity, quantity,
@@ -97,7 +97,7 @@ public class Steps implements Assertions<Steps> {
         return this;
     }
 
-    @Step("Проверяем что товары в корзине соотвествуют положенным туда ранее")
+    @Step("Проверяем что товары в корзине соответствуют положенным туда ранее")
     public Steps checkTitles() {
         titles.replaceAll(String::toUpperCase);
         Collections.sort(titles);

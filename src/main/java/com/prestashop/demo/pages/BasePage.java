@@ -14,7 +14,7 @@ public abstract class BasePage<CurrentPage> implements Assertions<CurrentPage> {
 
     /**
      * Открывает систему в браузере
-     * @param url указанный адресс системы
+     * @param url указанный адрес системы
      * @param typePage принимает класс, последующего перехода по системе
      */
     @Step("Переходим по ссылке: {url}")

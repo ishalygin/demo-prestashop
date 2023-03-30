@@ -28,7 +28,6 @@ public abstract class WebDriverSetup {
         Configuration.baseUrl = props.demoPrestashopUrl();
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 60000;
-        System.setProperty("webdriver.chrome.driver",  System.getProperty("user.dir") + "\\src\\test\\resources\\webdrivers\\"+props.chromedriver());
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 

@@ -6,8 +6,7 @@
 ### Общая информация
 
 `src/test/java/ru/vtb/at/ui/setup/WebDriverSetup.java` настройка web-драйвера\
-`src/test/resources/general.properties` техданные для фрейма (версия хромдрайвера)\
-`src/test/resources/webdrivers` директория для бинарника хромдрайвера\
+`src/test/resources/general.properties` техданные для фрейма\
 `src/test/java/com/prestashop/demo/StoreTests.java` автотесты\
 `src/main/java/com/prestashop/demo` PO и блоки\
 `src/main/java/helpers/TestRunData.java` тестовые данные

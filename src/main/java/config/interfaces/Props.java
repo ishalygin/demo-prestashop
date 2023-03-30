@@ -15,9 +15,6 @@ public interface Props extends Reloadable {
 
     Props props = ConfigFactory.create(Props.class);
 
-    @Key("chromedriver")
-    String chromedriver();
-
     @Key("demo.prestashop.url")
     String demoPrestashopUrl();
 

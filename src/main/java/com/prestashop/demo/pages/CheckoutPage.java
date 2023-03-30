@@ -28,7 +28,7 @@ public class CheckoutPage extends BasePage<CheckoutPage>{
      * @param fieldName   имя поля
      * @param fieldValue  значение поля
      */
-    @Step("Заполянем поле {fieldName} значением {fieldValue}")
+    @Step("Заполняем поле {fieldName} значением {fieldValue}")
     public CheckoutPage setField(String fieldName, String fieldValue) {
         $x("(//label[contains(text(), '" + fieldName + "')])[1]/following-sibling::div/input")
                 .shouldBe(Condition.visible).setValue(fieldValue);
